@@ -1,0 +1,377 @@
+/* ===========================
+   Reset y estilos base
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color: #f7feef;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/773/734/non_2x/abstract-technology-horizontal-motion-style-concept-digital-technology-connection-on-dark-blue-background-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #32CD32;
+  padding: 80px 20px; /* menos padding para móviles */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header div {
+  font-size: 2rem;
+  color: #00FF00;
+}
+
+/* ===========================
+   Main y secciones
+=========================== */
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* contenido centrado y flexible */
+  flex: 1;
+}
+
+section {
+  padding: 20px 0;
+}
+
+#sobre-mi {
+  max-width: 100%;
+  padding: 15px 20px;
+  color: #2c3e50;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#sobre-mi h2 {
+  color: #32CD32;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* ===========================
+   Fotos y parrafos
+=========================== */
+.parrafos {
+  display: flex;
+  flex-wrap: wrap; /* permite apilar en móviles */
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.fotocv {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.parrafos p {
+  flex: 1 1 200px;
+  text-align: justify;
+}
+
+/* ===========================
+   Botones y títulos
+=========================== */
+.titulo-seccion {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: gray;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.experience-block {
+  margin: 20px auto 30px auto; /* Centrado + separación */
+  padding: 20px 25px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 1000px; /* Evita ancho completo */
+  width: 100%;
+  box-sizing: border-box; /* Importante para móviles */
+ 
+}
+
+.experience-block ul {
+  padding-left: 20px;
+}
+
+
+.titulo-seccion:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Skills y fichas
+=========================== */
+.skills-container, .fichas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-block, .ficha, .experience-block {
+  flex: 1 1 250px;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}
+
+/* ===========================
+   Canvas de fondo
+=========================== */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#divider {
+  width: 100%;
+  height: 15px;
+  display: block;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 200, 150, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00c896;
+}
+
+.navbar .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.navbar .menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+/* Reset y box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Secciones */
+.apartado {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Contacto */
+.contacto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+
+
+/* Links */
+.contacto-item a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contacto-item a:hover {
+  color: #0077b5;
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background-color: #0056b3;
+}
+/* ===========================
+   Media Queries (responsive)
+=========================== */
+@media (max-width: 1024px) {
+  header h1 { font-size: 2rem; }
+  header div { font-size: 1.5rem; }
+  .fotocv { width: 200px; }
+}
+
+@media (max-width: 768px) {
+  header h1 { font-size: 1.6rem; }
+  header div { font-size: 1.2rem; }
+  .parrafos { flex-direction: column; align-items: center; }
+  .fotocv { width: 150px; }
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 1.4rem; }
+  header div { font-size: 1rem; }
+  .fotocv { width: 120px; }
+  .titulo-seccion { font-size: 0.9rem; padding: 8px 12px; }
+  main { padding: 10px; }
+}
+@media (max-width: 600px) {
+  .experience-block {
+    padding: 15px 15px; /* Menos padding */
+    margin-bottom: 20px;
+  }
+
+  .experience-block h3 {
+    font-size: 1.1rem;
+  }
+
+  .experience-block p,
+  .experience-block li {
+    font-size: 0.9rem;
+  }
+
+  .experience-block ul {
+    padding-left: 15px;
+  }
+}
+
+
+/* 📱 Tablets (601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .experience-block {
+    padding: 18px 20px;
+  }
+
+  .experience-block h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-block p,
+  .experience-block li {
+    font-size: 0.95rem;
+  }
+}
+
