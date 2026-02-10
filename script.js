@@ -127,7 +127,7 @@ navbar.classList.add("navbar");
 // Logo
 const logo = document.createElement("div");
 logo.classList.add("logo");
-logo.textContent = "Valeria L" ;
+logo.textContent = "Valeria L" , href = "index.html";
 
 // Links
 const links = document.createElement("div");
